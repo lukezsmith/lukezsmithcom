@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lukezsmith.herokuapp.com/sitemap.xml
+Sitemap: https://lukezsmith.com/sitemap.xml
