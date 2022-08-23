@@ -16,6 +16,13 @@ Including another URLconf
 from django.views.generic import TemplateView
 from django.urls import path, include, re_path
 from django.contrib import admin
+from django.contrib.sitemaps import GenericSitemap
+from django.contrib.sitemaps.views import sitemap
+from blogposts.models import Blogpost
+
+blog_info_dict = {
+    'queryset': Blogpost.objects.all()
+}
 
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
@@ -23,6 +30,10 @@ urlpatterns = [
     path('api-site/blogposts/', include('blogposts.api.urls')),
     path('api-site/books/', include('books.api.urls')),
     path('rest-auth/', include('rest_auth.urls')),
+    path('sitemap.xml', sitemap, {'sitemaps': {'blogpost': GenericSitemap(blog_info_dict, priority=0.6)}},
+     name='django.contrib.sitemaps.views.sitemap'),
     re_path('.*', TemplateView.as_view(template_name="index.html")),
-
 ]
+
+
+

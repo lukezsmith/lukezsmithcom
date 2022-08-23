@@ -23,5 +23,9 @@ class Blogpost(models.Model):
         self.slug = slugify(self.title)
         super(Blogpost, self).save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        # from django.core.urlresolvers import reverse
+        return '/post/%s/' % str(self.slug)
+
     def __str__(self):
         return self.title
