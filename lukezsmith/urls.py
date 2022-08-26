@@ -24,7 +24,7 @@ from django.http import FileResponse
 import os
  
 def show_pdf(request):
-    filepath = os.path.join('static', 'cv.pdf')
+    filepath = os.path.join('static', 'LukeSmithCV.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 urlpatterns = [
@@ -37,7 +37,6 @@ urlpatterns = [
      name='django.contrib.sitemaps.views.sitemap'),
     path('robots.txt',TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
     path('cv.pdf',show_pdf),
-
     re_path('.*', TemplateView.as_view(template_name="index.html")),
 ]
 
