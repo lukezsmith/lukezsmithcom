@@ -20,6 +20,13 @@ from django.contrib.sitemaps import GenericSitemap
 from django.contrib.sitemaps.views import sitemap
 from blogposts.sitemap import BlogpostSitemap
 
+from django.http import FileResponse
+import os
+ 
+def show_pdf(request):
+    filepath = os.path.join('static', 'cv.pdf')
+    return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
+
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('admin-site/login/', admin.site.urls),
@@ -29,6 +36,8 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': {'blogpost': BlogpostSitemap }},
      name='django.contrib.sitemaps.views.sitemap'),
     path('robots.txt',TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
+    path('cv.pdf',show_pdf),
+
     re_path('.*', TemplateView.as_view(template_name="index.html")),
 ]
 
