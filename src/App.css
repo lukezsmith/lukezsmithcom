@@ -11,6 +11,10 @@ body {
 
 pre {
   background-color: #f0f0f0;
+  word-break: normal !important;
+  word-wrap: normal !important;
+  white-space: pre !important;
+  overflow: auto;
 }
 
 blockquote {
@@ -23,7 +27,7 @@ code {
 	color: #000;
 	background-color: #f0f0f0;
 	border-radius: 3px;
-	padding: .2em 0
+	padding: .2em 0;
 }
 code::before,
 code::after {
@@ -381,4 +385,17 @@ h4:last-child{
     max-width: initial;
   }
 
+}
+
+/* youtube embeds */
+iframe{
+  --container-width: 720px;
+  --ratio: calc(16 / 9); /* 1.77 */
+  width: 100%;
+  height: calc(var(--container-width) / var(--ratio));
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
