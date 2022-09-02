@@ -6,17 +6,17 @@ function AboutView() {
     <div id='about-section'>
       <h1>About me</h1>
 
-      <div>
+      <p>
         Hi there! My name is Luke. I write code, but I am trying to start
         writing more words. The thing I care about most is human development, so
         I think a lot about building ambitious things and the
         new ways we will live our lives in the future.
-      </div>
+      </p>
 
-      <div>
+      <p>
         When I'm not developing things, I'm usually trying to find
         interesting things to think about. I usually find these through books, music and art. I also enjoy dabbling in photography and digital artwork generation through deep learning.
-      </div>
+      </p>
 
 
       <div>
@@ -32,12 +32,12 @@ function AboutView() {
 
       <div>
         <h3>Favourite books</h3>
-        <div>
+        <p>
           I love books and always like seeing what people are reading, so here's a list of my favourites.
           <br />
           You can also find a more comprehensive list on my{' '}
           <a href='https://www.goodreads.com/lukezsmith'>Goodreads</a>.
-        </div>
+        </p>
         <ul className='about-list'>
           <li>
             <a

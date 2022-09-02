@@ -23,7 +23,7 @@ class BaseLayout extends React.Component {
               <li>
                 <NavLink to='/projects'>Projects</NavLink>
               </li>
-              <li>
+              <li className='hide-mobile'>
                 <NavLink to='/bookshelf'>Bookshelf</NavLink>
               </li>
               <li>

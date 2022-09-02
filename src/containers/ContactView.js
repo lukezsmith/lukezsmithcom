@@ -5,12 +5,12 @@ function ContactView() {
     <div id='contact-section'>
       <h1>Contact</h1>
 
-      <div>
+      <p>
         The best place to catch me is on Twitter at{' '}
         <b>
           <a href='https://twitter.com/lukezsmith'>@lukezsmith</a>
         </b>
-      </div>
+      </p>
     </div>
   );
 }

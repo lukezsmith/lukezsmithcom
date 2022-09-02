@@ -24,7 +24,9 @@ class Post extends React.Component {
           >
             Posted on {date}
           </p>
-          <div> {data.lead}</div>
+          <p style={{
+            margin: 0
+          }}> {data.lead}</p>
           <br />
           <Divider />
         </div>

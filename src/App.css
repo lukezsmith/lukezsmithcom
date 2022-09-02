@@ -73,11 +73,9 @@ li {
 
 #categories-header {
   font-weight: 600;
-  font-size: 1em;
 }
 .categories > li {
   margin-top: 2%;
-  font-size: 0.9em;
   opacity: 0.75;
 }
 
@@ -118,10 +116,20 @@ li {
 }
 
 .content-content {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6em;
   margin-top: 2%;
   margin-bottom: 2%;
+  font-size: large;
+}
+
+.content-content p{
+  font-size: large;
+
+}
+
+h4{
+  font-size: large;
 }
 
 .post-header {
@@ -202,6 +210,10 @@ h4:last-child{
   margin: 0 auto;
 }
 
+p, li{
+  font-size: medium;
+}
+
 /* Mobile Breakpoints */
 @media only screen and (max-width: 599px) {
   body {
@@ -218,7 +230,6 @@ h4:last-child{
     min-width: initial;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
   }
 
   #sidebar-col > a{
@@ -235,8 +246,7 @@ h4:last-child{
 
   #navlinks{
     display: flex;
-    font-size: small;
-    /* font-size: 0.8em; */
+    font-size: base;
     padding-left: 0;
     margin: 0;
     justify-content: space-between;
@@ -279,6 +289,20 @@ h4:last-child{
   .article-img-small{
     width: 65vw;
   }
+
+  .hide-mobile{
+    display: none;
+  }
+  .content-content {
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: medium;
+  }
+  h4{
+    font-size: medium;
+  }
 }
 
 /* Tablet Portrait */
@@ -311,7 +335,7 @@ h4:last-child{
 
   .categories > li {
     margin-top: 10%;
-    font-size: 0.9em;
+    font-size: small;
     opacity: 0.75;
   }
 
@@ -339,7 +363,6 @@ h4:last-child{
 
   .categories > li {
     margin-top: 5%;
-    font-size: 0.9em;
     opacity: 0.75;
   }
 
@@ -366,7 +389,7 @@ h4:last-child{
   }
   .categories > li {
     margin-top: 10%;
-    font-size: 0.9em;
+    font-size: small;
     opacity: 0.75;
   }
 
