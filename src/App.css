@@ -64,6 +64,10 @@ ul {
   list-style: none;
 }
 
+.book-img{
+  width: 25%;
+}
+
 li {
   margin-top: 2%;
 }
@@ -302,6 +306,10 @@ p, li{
   }
   h4{
     font-size: medium;
+  }
+
+  .book-img{
+    width: 33%;
   }
 }
 
