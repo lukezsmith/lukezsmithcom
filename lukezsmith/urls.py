@@ -32,7 +32,7 @@ urlpatterns = [
     path('admin-site/login/', admin.site.urls),
     path('api-site/blogposts/', include('blogposts.api.urls')),
     path('api-site/books/', include('books.api.urls')),
-    path('rest-auth/', include('rest_auth.urls')),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': {'blogpost': BlogpostSitemap }},
      name='django.contrib.sitemaps.views.sitemap'),
     path('robots.txt',TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),

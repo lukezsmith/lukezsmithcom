@@ -4,20 +4,20 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 # register all posts url in api
-router.register(r'all', BlogpostViewSet, base_name='all')
+router.register(r'all', BlogpostViewSet, basename='all')
 # register development posts url in api
 router.register(r'development', DevelopmentBlogpostViewSet,
-                base_name='development')
+                basename='development')
 # register books posts url in api
 router.register(r'books', BooksBlogpostViewSet,
-                base_name='books')
+                basename='books')
 # register internet posts url in api
 router.register(r'internet', InternetBlogpostViewSet,
-                base_name='internet')
+                basename='internet')
 # register thoughts posts url in api
 router.register(r'thoughts', ThoughtsBlogpostViewSet,
-                base_name='thoughts')
+                basename='thoughts')
 # register art posts url in api
 router.register(r'art', ArtBlogpostViewSet,
-                base_name='art')
+                basename='art')
 urlpatterns = router.urls
