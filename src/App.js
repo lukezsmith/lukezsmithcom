@@ -10,12 +10,12 @@ import BaseLayout from './containers/BaseLayout';
 ReactGA.initialize('G-ZY9BSSKQD2');
 
 class App extends Component {
-	componentDidMount = () => {
-		ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Custom Title" });
-	};
+	// componentDidMount = () => {
+	// 	ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Custom Title" });
+	// };
 
-	componentDidUpdate = () =>
-		ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Custom Title" });
+	// componentDidUpdate = () =>
+	// 	ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Custom Title" });
 
 	render() {
 		return (
