@@ -7,15 +7,18 @@ function AboutView() {
       <h1>About me</h1>
 
       <p>
-        Hi there! My name is Luke. I'm an Embedded / Flight Software Engineer.
+        Hi there! My name is Luke. I'm a Software Engineer.
       </p>
       <p>
-        The thing I care about most is space exploration, and is a cause I
-        strive to contribute to every day.
+        The thing I care about most is building interesting things that people find useful.
+        <br/> 
+        Currently, I'm building <a target="_blank" href="https://alertbnb.com">Alertbnb</a>, 
+        a real-time alert and listing suite for Airbnb 
+        that lets you setup price and availability alerts for listings.
       </p>
 
       <p>
-        When I'm not developing things or watching space launches I like to find
+        When I'm not building things or watching space launches I like to find
         interesting things to think about. I usually find these through books,
         music and art.
       </p>
@@ -23,9 +26,9 @@ function AboutView() {
       <div>
         <h3>Main interests</h3>
         <ul className="about-list">
-          <li>Space Exploration</li>
-          <li>Embedded Software</li>
+          <li>Building things</li>
           <li>Books</li>
+          <li>Space Exploration</li>
           <li>The future of information creation and discovery</li>
           <li>Online communities/institutions for fostering innovation </li>
           <li>Autodidactism</li>
